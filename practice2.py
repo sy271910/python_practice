@@ -1,7 +1,7 @@
 # -*- coding: UTF-8 -
 
 # 定义一个函数
-#必选参数在前 默认参数在后 调用时默认参数可省略0000000000000000000000000
+#必选参数在前 默认参数在后 调用时默认参数可省略，默认参数必须指向不变对象
 def changeme(mylist,aa=1):
     "修改传入的列表"
     mylist.append([1, 2, 3, 4])
@@ -13,7 +13,7 @@ changeme(mylist)
 print("mylist")
 
 
-# 加了星号 * 的参数会以元组(tuple)的形式导入，存放所有未命名的变量参数。加了两个星号 ** 的参数会以字典的形式导入
+# 加了星号 * 的参数会以元组(tuple)的形式导入，存放所有未命名的变量参数。加了两个星号 ** 的参数会以字典(dict)的形式导入
 def printinfo(arg1, *vartuple):
     print("输出: ")
     print(arg1)
@@ -21,20 +21,21 @@ def printinfo(arg1, *vartuple):
         print(var)
     return
 
-printinfo(70, 60, 50)
 
 # 匿名函数 lambda [arg1 [,arg2,.....argn]]:expression
 sum = lambda arg1, arg2: arg1 + arg2
 # 调用sum函数
 print("相加后的值为 : ", sum(10, 20))
+printinfo(70, 60, 50)
 
 x = set('runoob')
 print(x)
 
+#递归函数  一个函数在内部调用自身本身
 
-def python_sy():
-    print("史远")
-    return
+
+
+
 
 
 # python 面向对象
@@ -93,3 +94,8 @@ def run_twice(animal):
     animal.run()
 
 run_twice(Animal())
+
+
+def python_sy():
+    print("史远")
+    return
