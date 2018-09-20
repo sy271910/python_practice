@@ -3,7 +3,7 @@
 # from practice2 import python_sy #引入text的python_sy函数
 # python_sy()
 
-import cmath         #引入模块   要使用 math 或 cmath 函数必须先导入
+import cmath         #引入模块   要使用 math 或 cmath 函数必须先导入000
 print(dir(cmath))     #dir返回的列表容纳了在一个模块里定义的所有模块，变量和函数
 print(cmath.sin(1))
 
