@@ -31,11 +31,6 @@ printinfo(70, 60, 50)
 x = set('runoob')
 print(x)
 
-#递归函数  一个函数在内部调用自身本身
-
-
-
-
 
 
 # python 面向对象
@@ -53,7 +48,7 @@ x = MyClass()
 print(x.i)
 print(x.f())
 
-# 属性的名称前加上两个下划线__，在Python中，实例的变量名如果以__开头，就变成了一个私有变量（private），只有内部可以访问
+# 在Python中，实例的变量名如果以__(双下划线)开头，就变成了一个私有变量（private），只有内部可以访问
 class Student(object):
     def __init__(self, name, score):
         self.name = name
@@ -73,9 +68,7 @@ bart = Student('Bart', 59)
 print(lisa.name, lisa.get_grade())
 print(bart.name, bart.get_grade())
 
-#python 动态语言 鸭子类型 它并不要求严格的继承体系，一个对象只要“看起来像鸭子，走起路来像鸭子”，那它就可以被看做是鸭子
-#  继承可以把父类的所有功能都直接拿过来，这样就不必重零做起，子类只需要新增自己特有的方法，也可以把父类不适合的方法覆盖重写
-# 由于Animal类型有run()方法，因此，传入的任意类型，只要是Animal类或者子类，就会自动调用实际类型的run()方法，这就是多态
+# 继承 多态
 class Animal(object):
     def run(self):
         print("Animal is running")
@@ -94,6 +87,15 @@ def run_twice(animal):
     animal.run()
 
 run_twice(Animal())
+
+def f(x):
+    return x*x
+
+# map()函数接收两个参数，一个是函数，一个是Iterable，map将传入的函数依次作用到序列的每个元素，并把结果作为新的Iterator返回
+r = map(f, [1, 2, 3, 4, 5, 6, 7, 8, 9])
+print(list(r))
+print(list(map(str, [1, 2, 3, 4, 5, 6, 7, 8, 9])))
+
 
 
 def python_sy():

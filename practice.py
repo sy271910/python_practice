@@ -7,7 +7,6 @@
 # Python 可以使用引号( ' )、双引号( " )、三引号( ''' 或 """ ) 来表示字符串，引号的开始与结束必须的相同类型的。其中三引号可用于多行注释
 # 像if、while、def和class这样的复合语句，首行以关键字开始，以冒号( : )结束，该行之后的一行或多行代码构成代码组
 
-# ****************************************************打开practice.py: python practice.py*************
 print("Hello, Python!")
 print(str("Hello, Python!"))  # 函数返回一个用户易读的表达形式
 print(repr("Hello, Python!"))  # 产生一个解释器易读的表达形式
@@ -111,7 +110,6 @@ fruits = ['banana', 'apple', 'mango']
 for fruit in fruits:
     print('当前水果 :', fruit)
 
-# 迭代器有两个基本的方法：iter() 和 next()
 list = [1, 2, 3, 4]
 it = iter(list)  # 创建迭代器对象
 print(next(it))  # 输出迭代器的下一个元素
