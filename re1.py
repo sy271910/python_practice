@@ -30,4 +30,3 @@ print( re.sub(r'#\d*$', "", phone))
 
 movieId="http://www.cbooo.cn/m/642989"
 print(re.findall(r'(\d+)',movieId)[0])
-
