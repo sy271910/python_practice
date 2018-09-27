@@ -13,7 +13,7 @@ changeme(mylist)
 print("mylist")
 
 
-# 加了星号 * 的参数会以元组(tuple)的形式导入，存放所有未命名的变量参数。加了两个星号 ** 的参数会以字典(dict)的形式导入
+# *args是非关键字参数，用于元组，**kw是关键字参数，用于字典
 def printinfo(arg1, *vartuple):
     print("输出: ")
     print(arg1)
@@ -53,6 +53,7 @@ class Student(object):
     def __init__(self, name, score):
         self.name = name
         self.score = score
+
 
     def get_grade(self):
         if self.score >= 90:
