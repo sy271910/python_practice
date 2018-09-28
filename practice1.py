@@ -8,10 +8,11 @@ print(dir(cmath))     #dir返回的列表容纳了在一个模块里定义的所
 print(cmath.sin(1))
 
 import time
+from datetime import datetime
 localtime = time.localtime(time.time())
-print("本地时间为 :", localtime)
+print("本地时间为 :",  localtime)
 # 格式化时间
-localtime = time.asctime( time.localtime(time.time()) )
+localtime = time.asctime( time.localtime())
 print("本地时间为 :", localtime)
 # 格式化成2016-03-20 11:45:39形式
 print(time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()))
@@ -24,6 +25,9 @@ import calendar
 cal = calendar.month(2018, 1)
 print("以下输出2018年1月份的日历:")
 print(cal)
+
+now = datetime.now()
+print(now.strftime('%Y-%m-%d %H:%M:%S'))
 
 #File
 # ****************************************************打开foo.text: cat foo.txt*************
