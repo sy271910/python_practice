@@ -41,9 +41,9 @@ print("读取的字符串是 : ", str)
 fo.close()
 print("是否已关闭 : ", fo.closed)
 
-# import os
+import os
 # os.rename("foo.txt","foo1.txt") #重命名
-# os.remove("foo1")#删除
+# os.remove("foo1.txt")#删除
 # os.mkdir("newdir")  #创建目录newdir
 # os.getcwd() #返回当前的工作目录
 # os.chdir("newdir")  #将当前目录改为"newdir"
