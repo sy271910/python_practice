@@ -15,7 +15,7 @@ a1 = re.findall(r'(\d+)', aa)[1]
 a2 = re.findall(r'食(\d+)', aa)[0]
 a3 = re.findall(r'蚂蚁2：.*?(\d+)', aa)[0]
 
-print (re.match('abc','abcdef').group())
+print (re.search('(\D+)','12abc12de').group())
 print ("".join(re.findall('[^蚂蚁\d]',aa)))
 
 print(a1)
