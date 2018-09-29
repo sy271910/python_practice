@@ -118,9 +118,3 @@ list = [1, 2, 3, 4]
 it = iter(list)  # 创建迭代器对象
 for x in it:
     print(x)
-
-
-def add(x, y, f):
-    return f(x) + f(y)
-
-print(add(-5, 6, abs))

@@ -26,6 +26,11 @@ def printinfo(arg1, *vartuple):
     return
 
 
+def add(x, y, f):
+    return f(x) + f(y)
+
+print(add(-5, 6, abs))
+
 # 匿名函数 lambda [arg1 [,arg2,.....argn]]:expression
 sum = lambda arg1, arg2: arg1 + arg2
 # 调用sum函数
