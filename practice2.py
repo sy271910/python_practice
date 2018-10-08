@@ -142,8 +142,6 @@ for color in Color.__members__.items():
 
 
 
-
-
 def python_sy():
     print("史远")
     return
